@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "d127cc64-3c15-498d-8a6b-8ddf6e166ee1",
+    "name": "SampleAPITesting",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Blog post",
+      "_postman_id": "f09bf496-15cb-44f1-802a-7e6cd277a57a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"people\":[\"bill21\",\"steve2\",\"bob2\"]}"
+        },
+        "url": "{{url}}/api/jsonBlob"
+      },
+      "response": []
+    },
+    {
+      "name": "GetBlog",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "a1199985-25b0-45f2-82a5-56b8ec6ac264",
+            "exec": [
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"people\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "9d8a4ab1-3319-4da1-bd6c-2a45f670c2d6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{blogLink}}"
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateBlog",
+      "_postman_id": "a459b378-17e4-4bdc-9125-f951e6062db5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteBlog",
+      "_postman_id": "b8edf88e-f2c7-4b8d-a23b-2cddb46478f3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    },
+    {
+      "name": "VerifyDeletion",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "c0f450e3-cb7e-4786-a00b-8d1ed4a14cd7",
+            "exec": [
+              "pm.test(\"Status code is 404\", function () {",
+              "    pm.response.to.have.status(404);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "8de51c12-a113-4f6b-ad8c-2fe59f507bee",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{blogLink}}"
+      },
+      "response": []
+    }
+  ]
+}
