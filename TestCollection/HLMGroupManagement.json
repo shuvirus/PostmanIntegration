@@ -1,0 +1,147 @@
+{
+  "info": {
+    "_postman_id": "3ec5fef8-c7a1-4268-8183-b82b51da2429",
+    "name": "HLMGroupManagement",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetGroupInfo",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "f30e6230-7f49-49fe-a5a9-0587b109cf73",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "d1bc8342-5f36-40f2-b087-a1ce2b66f36a",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "bbbe9b39-3c9f-4deb-b50b-d97abbf98242",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Cookie",
+            "value": "{{totaracookie}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://dev-totara.footprintmis.com/local/hlmapp/model.php?v=hlm_group&orgid=56184",
+          "protocol": "https",
+          "host": [
+            "dev-totara",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "hlm_group"
+            },
+            {
+              "key": "orgid",
+              "value": "56184"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddGroup",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "105a7ea1-2b5a-47b6-b090-9fbd4346d417",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "c2502ede-7de1-4be5-ba57-f1d1946c6f1f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Cookie",
+            "value": "{{totaracookie}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "WestEast",
+              "type": "text"
+            },
+            {
+              "key": "organisationid",
+              "value": "56184",
+              "type": "text"
+            },
+            {
+              "key": "description",
+              "value": "The westeast of the hospital",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://dev-totara.footprintmis.com/local/hlmapp/model.php?v=add_group",
+          "protocol": "https",
+          "host": [
+            "dev-totara",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "add_group"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
