@@ -213,60 +213,6 @@
         "disableBodyPruning": true
       },
       "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "orgid",
-              "value": "12",
-              "type": "text"
-            },
-            {
-              "key": "ja_id",
-              "value": "1",
-              "type": "text"
-            },
-            {
-              "key": "program_id",
-              "value": "10",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=assign_program",
-          "protocol": "https",
-          "host": [
-            "sbx",
-            "footprintmis",
-            "com"
-          ],
-          "path": [
-            "shared",
-            "totara",
-            "local",
-            "hlmapp",
-            "model.php"
-          ],
-          "query": [
-            {
-              "key": "v",
-              "value": "assign_program"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "GetPrograms",
-      "_postman_id": "d9f8c7fa-2bc7-4aa0-beec-05922c0b3019",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
         "method": "GET",
         "header": [],
         "url": ""
