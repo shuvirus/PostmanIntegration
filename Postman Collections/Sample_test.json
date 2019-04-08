@@ -121,6 +121,19 @@
         "url": ""
       },
       "response": []
+    },
+    {
+      "name": "GetUsers",
+      "_postman_id": "ae8c799f-fe05-4449-9d75-9af5cd771255",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
     }
   ]
 }
