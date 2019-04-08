@@ -108,6 +108,19 @@
         "url": "{{blogLink}}"
       },
       "response": []
+    },
+    {
+      "name": "SBX-AddUserToGroup",
+      "_postman_id": "627ab9c9-36bb-4162-b327-6ec24dbfe08c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
     }
   ]
 }
