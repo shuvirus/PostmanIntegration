@@ -134,6 +134,19 @@
         "url": ""
       },
       "response": []
+    },
+    {
+      "name": "GetFroupInfo",
+      "_postman_id": "0b9d0c79-e94a-4ec3-9805-e4217efb76da",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
     }
   ]
 }
