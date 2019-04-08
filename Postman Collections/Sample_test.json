@@ -116,9 +116,54 @@
         "disableBodyPruning": true
       },
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
-        "url": ""
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "orgid",
+              "value": "93185",
+              "type": "text"
+            },
+            {
+              "key": "groupid",
+              "value": "",
+              "type": "text"
+            },
+            {
+              "key": "ja_id",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=programs&orgid=93185",
+          "protocol": "https",
+          "host": [
+            "sbx",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "shared",
+            "totara",
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "programs"
+            },
+            {
+              "key": "orgid",
+              "value": "93185"
+            }
+          ]
+        }
       },
       "response": []
     },
@@ -138,6 +183,19 @@
     {
       "name": "GetFroupInfo",
       "_postman_id": "0b9d0c79-e94a-4ec3-9805-e4217efb76da",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    },
+    {
+      "name": "GetPendingUsers",
+      "_postman_id": "9166fdc1-ea10-4f65-8b04-1c3073c3d6eb",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
