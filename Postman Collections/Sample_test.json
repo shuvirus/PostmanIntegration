@@ -202,13 +202,92 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": ""
+        "url": {
+          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=get_pending_users_list&orgid=93185",
+          "protocol": "https",
+          "host": [
+            "sbx",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "shared",
+            "totara",
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "get_pending_users_list"
+            },
+            {
+              "key": "orgid",
+              "value": "93185"
+            }
+          ]
+        }
       },
       "response": []
     },
     {
       "name": "AssignProgram",
       "_postman_id": "b41ec6a2-71e0-482d-9715-fa8b181404f0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "orgid",
+              "value": "12",
+              "type": "text"
+            },
+            {
+              "key": "ja_id",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "program_id",
+              "value": "10",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=assign_program",
+          "protocol": "https",
+          "host": [
+            "sbx",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "shared",
+            "totara",
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "assign_program"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetPrograms",
+      "_postman_id": "d9f8c7fa-2bc7-4aa0-beec-05922c0b3019",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
