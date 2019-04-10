@@ -301,8 +301,28 @@
         "disableBodyPruning": true
       },
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "orgid",
+              "value": "93185",
+              "type": "text"
+            },
+            {
+              "key": "ja_id",
+              "value": "498182",
+              "type": "text"
+            },
+            {
+              "key": "group_id",
+              "value": "112",
+              "type": "text"
+            }
+          ]
+        },
         "url": {
           "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=remove_user_from_group",
           "protocol": "https",
