@@ -303,7 +303,28 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": ""
+        "url": {
+          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=remove_user_from_group",
+          "protocol": "https",
+          "host": [
+            "sbx",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "shared",
+            "totara",
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "remove_user_from_group"
+            }
+          ]
+        }
       },
       "response": []
     }
