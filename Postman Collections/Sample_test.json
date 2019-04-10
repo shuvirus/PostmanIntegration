@@ -127,19 +127,19 @@
               "type": "text"
             },
             {
-              "key": "groupid",
-              "value": "",
+              "key": "group_id",
+              "value": "12",
               "type": "text"
             },
             {
               "key": "ja_id",
-              "value": "",
+              "value": "499192",
               "type": "text"
             }
           ]
         },
         "url": {
-          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=programs&orgid=93185",
+          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=add_user_to_group",
           "protocol": "https",
           "host": [
             "sbx",
@@ -156,11 +156,7 @@
           "query": [
             {
               "key": "v",
-              "value": "programs"
-            },
-            {
-              "key": "orgid",
-              "value": "93185"
+              "value": "add_user_to_group"
             }
           ]
         }
@@ -288,6 +284,19 @@
     {
       "name": "GetPrograms",
       "_postman_id": "d9f8c7fa-2bc7-4aa0-beec-05922c0b3019",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    },
+    {
+      "name": "SBX- RemoveUserFromGroup",
+      "_postman_id": "52a77371-4348-4bd9-bbf4-3d313b11e8dd",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
