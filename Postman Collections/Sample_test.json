@@ -419,6 +419,78 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "SBX - AddGroup Copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "105a7ea1-2b5a-47b6-b090-9fbd4346d417",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "67a7dc06-4b24-45b8-850d-f67206d73b31",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Cookie",
+            "value": "{{totaracookie}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "WestEast",
+              "type": "text"
+            },
+            {
+              "key": "organisationid",
+              "value": "56184",
+              "type": "text"
+            },
+            {
+              "key": "description",
+              "value": "The westeast of the hospital",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://dev-totara.footprintmis.com/local/hlmapp/model.php?v=add_group",
+          "protocol": "https",
+          "host": [
+            "dev-totara",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "add_group"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
