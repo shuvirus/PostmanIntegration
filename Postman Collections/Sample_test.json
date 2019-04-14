@@ -295,7 +295,7 @@
       "response": []
     },
     {
-      "name": "GetPrograms Copy",
+      "name": "SBX - GetGroups",
       "_postman_id": "b49224ee-9454-4936-93b6-7405562b9448",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -427,6 +427,55 @@
             {
               "key": "v",
               "value": "add_group"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ApproveUser",
+      "_postman_id": "a3d3c2b5-bb8f-41df-8772-c1723241de5a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "orgid",
+              "value": "93185",
+              "type": "text"
+            },
+            {
+              "key": "ja_id",
+              "value": "562624",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://sbx.footprintmis.com/shared/totara/local/hlmapp/model.php?v=approve_user",
+          "protocol": "https",
+          "host": [
+            "sbx",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "shared",
+            "totara",
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "approve_user"
             }
           ]
         }
