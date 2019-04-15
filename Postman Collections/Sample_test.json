@@ -481,6 +481,55 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "GetNewProgram",
+      "_postman_id": "1fa1cb92-8f46-4cd0-b2cd-25ecc0c8900f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://dev-totara.footprintmis.com/local/hlmapp/model.php?v=hlm_group&orgid=56184",
+          "protocol": "https",
+          "host": [
+            "dev-totara",
+            "footprintmis",
+            "com"
+          ],
+          "path": [
+            "local",
+            "hlmapp",
+            "model.php"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "hlm_group"
+            },
+            {
+              "key": "orgid",
+              "value": "56184"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetChange",
+      "_postman_id": "f69ac3bc-6092-4b04-b2c5-723bd0c5e995",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
     }
   ]
 }
